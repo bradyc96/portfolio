@@ -3,7 +3,7 @@ header {
     justify-content: space-between;
     align-items: center;
     padding: 1%;
-    background-color: #13293d;
+    background-color: #13293df1;
     color: #fff;  
 }
 
@@ -38,7 +38,12 @@ nav a {
 
 }
 
+nav a:link {
+    text-decoration: none;
+}
+
 nav a:hover {
+    text-decoration: underline;
     text-decoration-color: red;
 }
 
@@ -81,12 +86,18 @@ p {
     border-right: solid #13293d 2px;
 } */
 
-.card {
-    width: 500px;
-    height: 500px;
-    margin-left: 10rem;
-    margin-bottom: 5rem;
-    flex-direction: column;
+.container {
+    grid-area: main;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-auto-rows: 350px;
+    justify-items: center;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+
+h4 {
+    text-align: center;
 }
 
 
@@ -97,7 +108,9 @@ p {
 
 .linkImg img {
     max-width: 400px;
-    max-height: 200px;
+    max-height: 225px;
+    min-width: 400px;
+    min-height: 225px;
     object-fit: cover;
     width: 100%;
   }
