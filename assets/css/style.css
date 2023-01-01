@@ -13,17 +13,11 @@ header {
     background-color: #0c1a27;
 }
 
-#profile img {
-    max-width: 300px;
-    max-height: 300px;
-    margin: 0 auto;
-}
-
-
 
 #trees {
-    max-width: 2500px;
-    max-height: 400px;
+    max-width: 90%;
+    max-height: 90%;
+    min-width: 85%;
     margin: 0 auto;
 }
 
